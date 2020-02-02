@@ -66,14 +66,26 @@
       </ul>
       <section>
         <h2>Фильтр:</h2>
-        <form>
+        <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цвет</legend>
-            <!--Здесь будут input'ы-->
+            <input id="filter-color-black" type="checkbox" name="black-color" checked>
+            <label for="filter-color-black">Черный</label>
+            <input id="filter-color-white" type="checkbox" name="white-color">
+            <label for="filter-color-white">Белый</label>
+            <input id="filter-color-blue" type="checkbox" name="blue-color" checked>
+            <label for="filter-color-blue">Синий</label>
+            <input id="filter-color-red" type="checkbox" name="red-color" checked>
+            <label for="filter-color-red">Красный</label>
+            <input id="filter-color-pink" type="checkbox" name="pink-color">
+            <label for="filter-color-pink">Розовый</label>
           </fieldset>
           <fieldset>
-            <legend>Bleutooth:</legend>
-            <!--Здесь будут input'ы-->
+            <legend>Bluetooth:</legend>
+            <input id="filter-with-bluetooth" type="radio" name="bluetooth" value="with-bluetooth" checked>
+            <label for="filter-with-bluetooth">Есть</label>
+            <input id="filter-without-bluetooth" type="radio" name="bluetooth" value="without-bluetooth">
+            <label for="filter-without-bluetooth">Нет</label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
