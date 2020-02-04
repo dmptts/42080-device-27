@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -104,7 +105,8 @@
       </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss">Разработано HTML Academy</a>
     </footer>
-    <div class="feedback-popup">
+    <section class="feedback-popup" style="display: none;">
+      <h2>Фильтр</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="name">Ваше имя:</label>
         <input id="name" type="text" name="name" placeholder="Имя Фамилия">
@@ -114,9 +116,10 @@
         <textarea id="mailtext" name="mailtext" cols="30" rows="10" placeholder="В свободной форме"></textarea>
         <button type="submit">Отправить</button>
       </form>
-    </div>
-    <div class="map-popup">
+    </section>
+    <section class="map-popup">
+      <h2>Карта</h2>
       <img src="img/map-big.jpg" alt="Большой кусок карты с изображением расположения Device" width="960" height="560">
-    </div>
+    </section>
   </body>
 </html>
