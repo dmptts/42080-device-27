@@ -8,6 +8,13 @@
 
 body {
   padding: 0;
+
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  letter-spacing: 0.15px;
 }
 
 img {
@@ -17,3 +24,82 @@ img {
 a {
   text-decoration: none
 }
+
+/* ======= Хедер страницы ======= */
+
+.page-header {
+  background-color: #f0c52e;
+}
+
+.main-nav a {
+  color: black;
+}
+
+.main-nav a:hover {
+  opacity: 0.6;
+}
+
+.main-nav a:active {
+  opacity: 0.3;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.search-form label {
+  display: none; /* to-do: удалить после замены на visually-hidden */
+}
+
+.search-form input {
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+.search-form input::placeholder {
+  color: inherit;
+}
+
+.search-form input:hover {
+  opacity: 0.6;
+}
+
+.search-form input:focus {
+  opacity: 1;
+}
+
+.search-form button {
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.search-form button:hover {
+  color: white;
+
+  background-color: black;
+}
+
+.search-form button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav ul:last-child {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.categories-list a {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: black;
+  letter-spacing: 0.15px;
+  text-transform: none;
+}
+
