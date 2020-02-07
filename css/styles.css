@@ -85,11 +85,11 @@ a {
 }
 
 .main-nav ul:last-child {
-  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 3.6px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -102,4 +102,3 @@ a {
   letter-spacing: 0.15px;
   text-transform: none;
 }
-
