@@ -14,7 +14,6 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #464646;
-  letter-spacing: 0.15px;
 }
 
 img {
@@ -99,6 +98,20 @@ a {
   line-height: 36px;
   font-weight: 300;
   color: black;
-  letter-spacing: 0.15px;
   text-transform: none;
+  letter-spacing: normal;
+}
+
+/* ======= Основное содержимое главной страницы ======= */
+
+.main-page .page-title {
+  display: none; /* to-do: удалить после замены на visually-hidden */
+}
+
+.section-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  font-weight: 800;
+  color: black;
 }
