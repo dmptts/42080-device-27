@@ -155,6 +155,72 @@ a {
   color: black;
 }
 
+/* ======= Основное содержимое страницы каталога ======= */
+
+.catalog-page .page-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog-item a {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  color: black;
+}
+
+.catalog-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item p {
+  font-size: 16px;
+}
+
+.compare-btn {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+
+  border: none;
+  background-color: transparent;
+}
+
+.compare-btn:hover {
+  color: black;
+}
+
+.compare-btn:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 /* ======= Футер страницы ======= */
 
 .page-footer {
@@ -201,6 +267,7 @@ a {
   line-height: 1.33;
   letter-spacing: 4px;
   color: white;
+  text-transform: uppercase;
 }
 
 .footer-nav a:hover {
