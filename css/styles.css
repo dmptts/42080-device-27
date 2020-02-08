@@ -53,6 +53,14 @@ a {
   background-color: #f0c52e;
 }
 
+.header-logo[href]:hover {
+  opacity: 0.6;
+}
+
+.header-logo[href]:active {
+  opacity: 0.3;
+}
+
 .main-nav a {
   color: black;
 }
@@ -153,8 +161,16 @@ a {
   background-color: #464646;
 }
 
-.footer-logo use{
+.footer-logo svg{
   fill: #ffc600;
+}
+
+.footer-logo[href]:hover {
+  opacity: 0.6;
+}
+
+.footer-logo[href]:active {
+  opacity: 0.3;
 }
 
 .footer-user-block {
