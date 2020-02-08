@@ -146,3 +146,80 @@ a {
   font-weight: 800;
   color: black;
 }
+
+/* ======= Футер страницы ======= */
+
+.page-footer {
+  background-color: #464646;
+}
+
+.footer-logo use{
+  fill: #ffc600;
+}
+
+.footer-user-block {
+  list-style: none;
+}
+
+.footer-user-block a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 2.4;
+}
+
+.footer-user-block a:hover {
+  color: white;
+}
+
+.footer-user-block a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav a {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 4px;
+  color: white;
+}
+
+.footer-nav a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer p {
+  color: white;
+}
+
+.social a {
+  color: white;
+  opacity: 0.3;
+}
+
+.social a:hover {
+  opacity: 0.6;
+}
+
+.social a:active {
+  opacity: 0.1;
+}
+
+.copyright {
+  color: #ffc600;
+}
+
+.copyright:hover {
+  opacity: 0.6;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
