@@ -37,6 +37,7 @@ a {
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -211,6 +212,7 @@ a {
 
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .compare-btn:hover {
