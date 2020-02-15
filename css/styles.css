@@ -243,12 +243,19 @@ a {
   font-weight: 800;
 }
 
+.breadcrumbs {
+  display: flex;
+}
+
 .breadcrumbs li {
   list-style: none;
 }
 
 .breadcrumbs a {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.3);
 }
 
