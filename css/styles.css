@@ -48,19 +48,17 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.submit-btn {
-  cursor: pointer;
-}
-
 /* ======= Хедер страницы ======= */
 
 .page-header {
   position: relative;
 
-  width: 1160px;
+  width: 1040px;
   min-height: 300px;
   margin: auto;
   margin-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
 
   background-color: #f7e296;
   border-top: 1px solid transparent;
@@ -72,7 +70,6 @@ a {
   height: 35px;
   margin-top: -19px;
   margin-bottom: 43px;
-  margin-left: 60px;
 }
 
 .header-logo[href]:hover {
@@ -94,11 +91,11 @@ a {
 }
 
 .main-nav a:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .main-nav a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav ul {
@@ -109,6 +106,7 @@ a {
 
 .search-form {
   width: 440px;
+  height: 50px;
 }
 
 .search-form label {
@@ -116,9 +114,27 @@ a {
 }
 
 .search-form input {
+  width: 310px;
+  height: 50px;
+  margin-right: -4px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 40px;
+  padding-right: 0;
+
+
+  color: rgba(0, 0, 0, 0.3);
+
   background-color: transparent;
+  background-image: url("../img/icon-search.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 4px 16px;
   border: none;
-  opacity: 0.3;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+  /* box-sizing: content-box; */
 }
 
 .search-form input::placeholder {
@@ -126,16 +142,32 @@ a {
 }
 
 .search-form input:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search-form input:focus {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 2px solid #000000;
 }
 
 .search-form button {
+  display: none;
+  width: 86px;
+  padding: 0;
+
+  font-weight: 300;
+  line-height: 46px;
+
   background-color: transparent;
   border: 2px solid #000000;
+
+  cursor: pointer;
+}
+
+/* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
+
+.search-form input:focus + button {
+  display: inline;
 }
 
 .search-form button:hover {
@@ -151,7 +183,10 @@ a {
 .header-user-block {
   display: flex;
   justify-content: space-between;
+
   width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .main-nav > ul:last-child {
