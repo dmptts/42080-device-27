@@ -312,7 +312,7 @@ a {
 
 .catalog {
   width: 830px;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 
   background-color: #ffffff;
 }
@@ -380,6 +380,7 @@ a {
 /* ======= Футер страницы ======= */
 
 .page-footer {
+  padding-top: 65px;
   background-color: #464646;
 }
 
@@ -421,6 +422,14 @@ a {
   list-style: none;
 }
 
+.footer-user-block li {
+  margin-right: 65px;
+}
+
+.footer-user-block li:last-child {
+  margin-right: 0;
+}
+
 .footer-user-block a {
   color: rgba(255, 255, 255, 0.7);
   line-height: 2.4;
@@ -438,6 +447,14 @@ a {
   display: flex;
 
   list-style: none;
+}
+
+.footer-nav li {
+  margin-right: 38px;
+}
+
+.footer-nav li:last-child {
+  margin-right: 0;
 }
 
 .footer-nav a {
@@ -467,6 +484,14 @@ a {
 
   margin: 0;
   padding: 0;
+}
+
+.social li {
+  margin-right: 22px;
+}
+
+.social li:last-child {
+  margin-right: 0;
 }
 
 .social a {
