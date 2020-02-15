@@ -31,7 +31,7 @@ a {
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 4px;
-  color: black;
+  color: #000000;
   font-weight: 800;
   text-transform: uppercase;
 
@@ -90,7 +90,7 @@ a {
 }
 
 .main-nav a {
-  color: black;
+  color: #000000;
 }
 
 .main-nav a:hover {
@@ -135,13 +135,13 @@ a {
 
 .search-form button {
   background-color: transparent;
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
 .search-form button:hover {
-  color: white;
+  color: #ffffff;
 
-  background-color: black;
+  background-color: #000000;
 }
 
 .search-form button:active {
@@ -179,7 +179,7 @@ a {
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
-  color: black;
+  color: #000000;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -214,7 +214,7 @@ a {
   font-size: 35px;
   line-height: 1;
   font-weight: 800;
-  color: black;
+  color: #000000;
 }
 
 .main-content ul {
@@ -222,7 +222,7 @@ a {
   font-size: 16px;
   line-height: 2.5;
   font-weight: 800;
-  color: black;
+  color: #000000;
 }
 
 /* ======= Основное содержимое страницы каталога ======= */
@@ -270,7 +270,7 @@ a {
 .catalog {
   width: 830px;
 
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .catalog ul {
@@ -300,7 +300,7 @@ a {
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
-  color: black;
+  color: #000000;
 }
 
 .catalog-item a:hover {
@@ -326,7 +326,7 @@ a {
 }
 
 .compare-btn:hover {
-  color: black;
+  color: #000000;
 }
 
 .compare-btn:active {
@@ -381,7 +381,7 @@ a {
 }
 
 .footer-user-block a:hover {
-  color: white;
+  color: #ffffff;
 }
 
 .footer-user-block a:active {
@@ -398,7 +398,7 @@ a {
   font-weight: 800;
   line-height: 1.33;
   letter-spacing: 4px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -411,7 +411,7 @@ a {
 }
 
 .page-footer p {
-  color: white;
+  color: #ffffff;
 }
 
 .social {
@@ -420,7 +420,7 @@ a {
 }
 
 .social a {
-  color: white;
+  color: #ffffff;
   opacity: 0.3;
 }
 
