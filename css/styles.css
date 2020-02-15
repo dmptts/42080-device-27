@@ -156,7 +156,7 @@ a {
   position: relative;
   width: 100%;
 
-  font-family: "Gilroy", Arial;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
