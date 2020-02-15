@@ -195,10 +195,6 @@ a {
   display: none; /* to-do: удалить после замены на visually-hidden */
 }
 
-.main-content {
-  padding-bottom: 90px;
-}
-
 .index-sections-wraper {
   display: flex;
   justify-content: space-between;
@@ -281,6 +277,7 @@ a {
 
 .catalog {
   width: 830px;
+  margin-bottom: 90px;
 
   background-color: #ffffff;
 }
