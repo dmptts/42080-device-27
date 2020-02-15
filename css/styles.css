@@ -149,11 +149,16 @@ a {
 }
 
 .header-user-block {
+  display: flex;
+  justify-content: space-between;
   width: 50%;
 }
 
 .main-nav > ul:last-child {
   position: relative;
+
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
@@ -372,6 +377,8 @@ a {
 }
 
 .footer-user-block {
+  display: flex;
+
   list-style: none;
 }
 
@@ -389,6 +396,8 @@ a {
 }
 
 .footer-nav {
+  display: flex;
+
   list-style: none;
 }
 
@@ -415,6 +424,8 @@ a {
 }
 
 .social {
+  display: flex;
+
   margin: 0;
   padding: 0;
 }
