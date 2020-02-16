@@ -315,14 +315,41 @@ a {
 .filter {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   flex-grow: 1;
+}
 
-  width: 200px;
+.filter-title-wraper {
+  display: flex;
+  justify-content: flex-end;
   padding-left: 59px;
   padding-right: 67px;
 
-  background-color: #ebebeb;
+  background-color: #d9d9d9;
+}
+
+.filter-title {
+  width: 200px;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.filter-form-wraper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+
+  padding-left: 59px;
+  padding-right: 67px;
+
+  background-color: #ebebeb
 }
 
 .filter-form {

@@ -71,30 +71,34 @@
       </div>
       <div class="catalog-sections-wraper">
         <section class="filter">
-          <!-- <h2>Фильтр:</h2> -->
-          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend>Цвет</legend>
-              <input id="filter-color-black" type="checkbox" name="black-color" checked>
-              <label for="filter-color-black">Черный</label>
-              <input id="filter-color-white" type="checkbox" name="white-color">
-              <label for="filter-color-white">Белый</label>
-              <input id="filter-color-blue" type="checkbox" name="blue-color" checked>
-              <label for="filter-color-blue">Синий</label>
-              <input id="filter-color-red" type="checkbox" name="red-color" checked>
-              <label for="filter-color-red">Красный</label>
-              <input id="filter-color-pink" type="checkbox" name="pink-color">
-              <label for="filter-color-pink">Розовый</label>
-            </fieldset>
-            <fieldset>
-              <legend>Bluetooth:</legend>
-              <input id="filter-with-bluetooth" type="radio" name="bluetooth" value="with-bluetooth" checked>
-              <label for="filter-with-bluetooth">Есть</label>
-              <input id="filter-without-bluetooth" type="radio" name="bluetooth" value="without-bluetooth">
-              <label for="filter-without-bluetooth">Нет</label>
-            </fieldset>
-            <button type="submit">Показать</button>
-          </form>
+          <div class="filter-title-wraper">
+            <h2 class="filter-title">Фильтр:</h2>
+          </div>
+          <div class="filter-form-wraper">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset>
+                <legend>Цвет</legend>
+                <input id="filter-color-black" type="checkbox" name="black-color" checked>
+                <label for="filter-color-black">Черный</label>
+                <input id="filter-color-white" type="checkbox" name="white-color">
+                <label for="filter-color-white">Белый</label>
+                <input id="filter-color-blue" type="checkbox" name="blue-color" checked>
+                <label for="filter-color-blue">Синий</label>
+                <input id="filter-color-red" type="checkbox" name="red-color" checked>
+                <label for="filter-color-red">Красный</label>
+                <input id="filter-color-pink" type="checkbox" name="pink-color">
+                <label for="filter-color-pink">Розовый</label>
+              </fieldset>
+              <fieldset>
+                <legend>Bluetooth:</legend>
+                <input id="filter-with-bluetooth" type="radio" name="bluetooth" value="with-bluetooth" checked>
+                <label for="filter-with-bluetooth">Есть</label>
+                <input id="filter-without-bluetooth" type="radio" name="bluetooth" value="without-bluetooth">
+                <label for="filter-without-bluetooth">Нет</label>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
+          </div>
         </section>
         <section class="catalog">
           <ul>
