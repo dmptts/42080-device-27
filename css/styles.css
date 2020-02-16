@@ -54,9 +54,9 @@ a {
   position: relative;
 
   width: 1040px;
-  min-height: 300px;
   margin: auto;
   margin-top: 40px;
+  padding-bottom: 50px;
   padding-left: 60px;
   padding-right: 60px;
 
@@ -64,12 +64,20 @@ a {
   border-top: 1px solid transparent;
 }
 
+.main-page .page-header {
+  min-height: 250px;
+}
+
+.catalog-page .page-header {
+  min-height: 128px;
+}
+
 .header-logo {
   display: block;
   width: 163px;
   height: 35px;
   margin-top: -19px;
-  margin-bottom: 43px;
+  margin-bottom: 16px;
 }
 
 .header-logo[href]:hover {
@@ -108,8 +116,6 @@ a {
 
 
 .main-nav ul {
-  padding: 0;
-
   list-style: none;
 }
 
@@ -231,7 +237,7 @@ a {
   position: absolute;
   content: "";
   top: 6px;
-  left: 2px;
+  left: 6px;
 
   width: 10px;
   height: 10px;
@@ -253,29 +259,77 @@ a {
   background-repeat: no-repeat;
 }
 
-.main-nav > ul:last-child {
+.main-nav-bot {
   position: relative;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+
   width: 100%;
+  margin-top: 29px;
+  margin-bottom: 0;
+  padding: 0;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
+}
+
+.main-nav-bot li:first-child {
+  margin-right: auto;
+}
+
+.main-nav-bot li:nth-child(2) {
+  margin-right: 34px;
+}
+
+.main-nav-bot li:nth-child(3) {
+  margin-right: 105px;
+}
+
+/* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
+
+.main-nav-bot li:first-child:hover .categories-list {
+  display: flex;
 }
 
 .categories-list {
   position: absolute;
   top: 100%;
-  left: 0;
-  display: none;
-  width: 1160px;
+  left: -60px;
 
-  background-color: #f0c52e;
+  display: none;
+  justify-content: flex-start;
+
+  width: 1040px;
+  padding-top: 29px;
+  padding-bottom: 28px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  background-color: #f7e296;
+}
+
+.categories-list ul {
+  padding: 0;
+}
+
+.categories-list li:first-child {
+  width: 200px;
+}
+
+.categories-list li:nth-child(2),
+.categories-list li:nth-child(3) {
+  width: 160px;
+}
+
+.categories-list li:first-child,
+.categories-list li:nth-child(2),
+.categories-list li:nth-child(3) {
+  margin-right: 40px;
 }
 
 .categories-list a {
