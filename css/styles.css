@@ -276,10 +276,19 @@ a {
 
 .breadcrumbs {
   display: flex;
+
+  padding-left: 59px;
 }
 
 .breadcrumbs li {
+  margin-right: 14px;
+  padding-left: 25px;
+
   list-style: none;
+}
+
+.breadcrumbs li:first-child {
+  padding-left: 0;
 }
 
 .breadcrumbs a {
