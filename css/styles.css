@@ -269,6 +269,7 @@ a {
 }
 
 .catalog-page .page-title {
+  padding-left: 59px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   font-weight: 800;
