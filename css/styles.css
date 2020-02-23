@@ -36,6 +36,8 @@ a {
 	overflow: hidden;
 }
 
+/* To-do: добавить анимацию */
+
 .btn {
   position: relative;
 
@@ -56,6 +58,8 @@ a {
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  z-index: 2;
 }
 
 .btn::before {
@@ -602,57 +606,122 @@ a {
   flex-grow: 1;
   justify-content: flex-end;
 
-  padding-left: 59px;
-  padding-right: 67px;
+  padding-left: 55px;
+  padding-right: 70px;
 
   background-color: #ebebeb
 }
 
 .filter-form {
-  width: 202px;
-  /* до момента добавления диапазонного фильтра */
+  width: 201px;
+  /* До момента добавления диапазонного фильтра */
   padding-top: 209px;
 }
 
 .filter-form fieldset {
-  position: relative;
-
   margin: 0;
   padding: 0;
+  padding-top: 22px;
   padding-bottom: 36px;
 
   border: none;
 }
 
-.filter-form fieldset::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #000000;
-}
-
 .filter-form legend {
-  display: block;
-  /* box-sizing: content-box; */
-  margin-top: 12px;
-  margin-bottom: 23px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
   color: #000000;
+
+  border-top: 2px solid #000000;
 }
 
 .filter-form label {
+  position: relative;
+
   display: block;
   margin-bottom: 10px;
-  padding-left: 36px;
+  padding-left: 39px;
+
+  cursor: pointer;
+}
+
+.filter-form-checkbox + label::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/icon-checkbox-off.svg");
+  background-repeat: no-repeat;
+
+  transform: translate(0, -50%);
+}
+
+.filter-form-checkbox:checked + label::before {
+  width: 27px;
+
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.filter-form-radio + label::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  background-color: transparent;
+  border: 4px solid #000000;
+  border-radius: 50%;
+
+  transform: translate(0, -50%);
+}
+
+.filter-form-radio:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 8px;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #000000;
+  border-radius: 50%;
+
+  transform: translate(0, -50%);
+}
+
+.filter-form label:hover::before,
+.filter-form label:hover::after {
+  opacity: 0.6;
+}
+
+.filter-form-checkbox:disabled + label,
+.filter-form-radio:disabled + label,
+.filter-form-checkbox:disabled + label::before,
+.filter-form-checkbox:disabled + label:hover::before
+.filter-form-radio:disabled + label::before,
+.filter-form-radio:disabled + label:hover::before,
+.filter-form-radio:disabled + label::after,
+.filter-form-radio:disabled + label:hover::after {
+  opacity: 0.3;
+}
+
+.filter-form-btn {
+  width: 100%;
 }
 
 .filter-form label:last-child {
