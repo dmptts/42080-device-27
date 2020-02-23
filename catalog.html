@@ -78,22 +78,22 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
                 <legend>Цвет</legend>
-                <input id="filter-color-black" type="checkbox" name="black-color" checked>
+                <input id="filter-color-black" class="visually-hidden" type="checkbox" name="black-color" checked>
                 <label for="filter-color-black">Черный</label>
-                <input id="filter-color-white" type="checkbox" name="white-color">
+                <input id="filter-color-white" class="visually-hidden" type="checkbox" name="white-color">
                 <label for="filter-color-white">Белый</label>
-                <input id="filter-color-blue" type="checkbox" name="blue-color" checked>
+                <input id="filter-color-blue" class="visually-hidden" type="checkbox" name="blue-color" checked>
                 <label for="filter-color-blue">Синий</label>
-                <input id="filter-color-red" type="checkbox" name="red-color" checked>
+                <input id="filter-color-red" class="visually-hidden" type="checkbox" name="red-color" checked>
                 <label for="filter-color-red">Красный</label>
-                <input id="filter-color-pink" type="checkbox" name="pink-color">
+                <input id="filter-color-pink" class="visually-hidden" type="checkbox" name="pink-color">
                 <label for="filter-color-pink">Розовый</label>
               </fieldset>
               <fieldset>
-                <legend>Bluetooth:</legend>
-                <input id="filter-with-bluetooth" type="radio" name="bluetooth" value="with-bluetooth" checked>
+                <legend>Bluetooth</legend>
+                <input id="filter-with-bluetooth" class="visually-hidden" type="radio" name="bluetooth" value="with-bluetooth" checked>
                 <label for="filter-with-bluetooth">Есть</label>
-                <input id="filter-without-bluetooth" type="radio" name="bluetooth" value="without-bluetooth">
+                <input id="filter-without-bluetooth" class="visually-hidden" type="radio" name="bluetooth" value="without-bluetooth">
                 <label for="filter-without-bluetooth">Нет</label>
               </fieldset>
               <button type="submit">Показать</button>
@@ -104,51 +104,61 @@
           <ul>
 
             <li class="catalog-item">
-              <div>
-                <img src="img/catalog-item-1.jpg" alt="Изображение любительской селфи-палки" width="360" height="380">
+              <div class="item-img-container">
+                <img class="catalog-item-img" src="img/catalog-item-1.jpg" alt="Изображение любительской селфи-палки" width="360" height="380">
                 <button class="btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
-              <a href="#">
-                <h3>Любительская селфи-палка</h3>
-              </a>
-              <p>500 руб.</p>
+              <div class="item-info-container">
+                <a href="#">
+                  <h3>Любительская селфи-палка</h3>
+                </a>
+                <p>500 руб.</p>
+              </div>
             </li>
 
             <li class="catalog-item">
-              <div>
-                <img src="img/catalog-item-2.jpg" alt="Изображение профессиональной селфи-палки" width="360" height="380">
+              <div class="item-img-container">
+                <img class="catalog-item-img" src="img/catalog-item-2.jpg" alt="Изображение профессиональной селфи-палки" width="360" height="380">
                 <button class="btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
-              <a href="#">
-                <h3>Профессиональная селфи-палка </h3>
-              </a>
-              <p>1 500 руб.</p>
+              <div class="item-info-container">
+                <a href="#">
+                  <h3>Профессиональная селфи-палка </h3>
+                </a>
+                <p>1 500 руб.</p>
+              </div>
             </li>
 
             <li class="catalog-item">
-              <div>
-                <img src="img/catalog-item-3.jpg" alt="Изображение непотопляемой селфи-палки" width="360" height="380">
+              <div class="item-img-container">
+                <img class="catalog-item-img" src="img/catalog-item-3.jpg" alt="Изображение непотопляемой селфи-палки" width="360" height="380">
                 <button class="btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
-              <a href="#">
-                <h3>Непотопляемая селфи-палка</h3>
-              </a>
-              <p>2 500 руб.</p>
+              <div class="item-info-container">
+                <a href="#">
+                  <h3>Непотопляемая селфи-палка</h3>
+                </a>
+                <p>2 500 руб.</p>
+              </div>
+
             </li>
 
             <li class="catalog-item">
-              <div>
-                <img src="img/catalog-item-4.jpg" alt="Изображение селфи-палки «Следуй за мной»" width="360" height="380">
+              <div class="item-img-container">
+                <img class="catalog-item-img" src="img/catalog-item-4.jpg" alt="Изображение селфи-палки «Следуй за мной»" width="360" height="380">
                 <button class="btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
-              <a href="#">
-                <h3>Селфи-палка «Следуй за мной»</h3>
-              </a>
-              <p>4 900 руб.</p>
+              <div class="item-info-container">
+                <a href="#">
+                  <h3>Селфи-палка «Следуй за мной»</h3>
+                </a>
+                <p>4 900 руб.</p>
+              </div>
+
             </li>
 
           </ul>
