@@ -24,6 +24,14 @@ a {
   text-decoration: none
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .btn {
   position: relative;
 
@@ -664,11 +672,15 @@ a {
 .footer-mid-container {
   display: flex;
   justify-content: flex-start;
+
+  margin-bottom: 64px;
 }
 
 .footer-bot-container {
   display: flex;
   justify-content: center;
+
+  line-height: normal;
 }
 
 .footer-logo {
@@ -824,6 +836,8 @@ a {
   display: flex;
 
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -836,6 +850,9 @@ a {
 }
 
 .social a {
+  width: 32px;
+  height: 32px;
+
   color: #ffffff;
   opacity: 0.3;
 }
@@ -849,6 +866,10 @@ a {
 }
 
 .copyright {
+  width: 27px;
+  height: 35px;
+  margin-left: -27px;
+
   color: #ffc600;
 }
 
