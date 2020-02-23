@@ -669,6 +669,11 @@ a {
   justify-content: center;
 }
 
+.footer-logo {
+  width: 163px;
+  height: 35px;
+}
+
 .footer-logo svg{
   fill: #ffc600;
 }
@@ -684,11 +689,14 @@ a {
 .footer-user-block {
   display: flex;
 
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .footer-user-block li {
-  margin-right: 65px;
+  margin-right: 40px;
 }
 
 .footer-user-block li:last-child {
@@ -696,8 +704,15 @@ a {
 }
 
 .footer-user-block a {
+  position: relative;
+
+  display: block;
+  height: 21px;
+  margin-top: 3px;
+  padding-left: 25px;
+
   color: rgba(255, 255, 255, 0.7);
-  line-height: 2.4;
+  line-height: 21px;
 }
 
 .footer-user-block a:hover {
@@ -706,6 +721,52 @@ a {
 
 .footer-user-block a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-block a::before {
+  position: absolute;
+  content: "";
+}
+
+.footer-user-block a:hover::before {
+  opacity: 0.6;
+}
+
+.footer-user-block a:active::before {
+  opacity: 0.3;
+}
+
+.footer-user-block .login-btn::before {
+  top: 4px;
+  left: 0px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/icon-user-footer.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-user-block .compare-btn::before {
+  top: 6px;
+  left: 5px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/icon-compare-footer.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-user-block .cart-btn::before {
+  top: 4px;
+  left: 2px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icon-cart-footer.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-nav {
