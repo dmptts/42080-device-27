@@ -493,23 +493,48 @@ a {
 }
 
 .catalog-page .page-title {
+  margin: 0;
+  margin-top: 46px;
+  margin-bottom: 29px;
   padding-left: 59px;
+
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   font-weight: 800;
+  letter-spacing: 0.7px;
 }
 
 .breadcrumbs {
   display: flex;
 
+  margin: 0;
+  margin-bottom: 44px;
   padding-left: 59px;
+
 }
 
 .breadcrumbs li {
+  position: relative;
+
   margin-right: 14px;
   padding-left: 25px;
 
+  line-height: normal;
+
   list-style: none;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 3px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/icon-breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs li:first-child {
