@@ -78,7 +78,8 @@
         <section class="contacts">
           <h2 class="section-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img class="map" src="img/map.jpg" alt="Расположение Device на карте" width="560" height="222">
+          <!-- <img class="map" src="img/map.jpg" alt="Расположение Device на карте" width="560" height="222"> -->
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488780003!2d37.52742931620689!3d55.68703098053577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1582569542184!5m2!1sru!2sru" width="560" height="222" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <button class="btn section-btn" type="button">Напишите нам</button>
         </section>
       </div>
@@ -147,7 +148,7 @@
       </div>
     </footer>
     <!-- To-do: Добавить оверлей к модальным окнам -->
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback visually-hidden">
       <h2 class="visually-hidden">Обратная связь</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -168,9 +169,12 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <section class="map-popup" style="display: none;">
-      <h2>Карта</h2>
-      <img src="img/map-big.jpg" alt="Большой кусок карты с изображением расположения Device" width="960" height="560">
+    <section class="modal modal-map visually-hidden">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488780003!2d37.52742931620689!3d55.68703098053577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1582569542184!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <button class="modal-btn-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
   </body>
 </html>
