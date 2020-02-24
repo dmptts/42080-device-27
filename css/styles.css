@@ -743,7 +743,7 @@ a {
   width: 760px;
   margin: 0;
   padding-top: 140px;
-  padding-left: 73px;
+  padding-left: 71px;
 
   list-style: none;
 }
@@ -793,7 +793,7 @@ a {
   display: flex;
   justify-content: space-between;
 
-  padding-top: 30px;
+  padding-top: 31px;
 }
 
 .catalog-item h3 {
@@ -1105,3 +1105,147 @@ a {
 .copyright:active {
   opacity: 0.3;
 }
+
+/* ======= Модальное окно обартной связи ======= */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-feedback {
+  width: 760px;
+  min-height: 353px;
+  padding-top: 79px;
+  padding-bottom: 79px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-feedback form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-feedback p {
+  margin: 0;
+}
+
+.modal-feedback label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+  padding-left: 17px;
+  padding-right: 17px;
+
+  background-color: #ffffff;
+  border: 3px solid #f0c52e;
+}
+
+.modal-feedback textarea:focus {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.modal-feedback input{
+  width: 360px;
+  height: 50px;
+  margin-bottom: 36px;
+}
+
+.modal-feedback textarea {
+  width: 760px;
+  height: 156px;
+  margin-bottom: 41px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.modal-feedback-btn {
+  width: 200px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  display: block;
+  width: 55px;
+  height: 55px;
+
+  background-color: #f0c52e;
+  opacity: 0.5;
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-btn-close:hover {
+  opacity: 1;
+}
+
+.modal-btn-close:active {
+  opacity: 0.3;
+}
+
+.modal-btn-close::before,
+.modal-btn-close::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+
+  width: 23px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.modal-btn-close::before {
+  transform:
+    translate(-50%, -50%)
+    rotate(45deg);
+}
+
+.modal-btn-close::after {
+  transform:
+    translate(-50%, -50%)
+    rotate(-45deg);
+}
+
