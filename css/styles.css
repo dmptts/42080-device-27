@@ -160,7 +160,6 @@ a {
   opacity: 0.3;
 }
 
-
 .main-nav ul {
   list-style: none;
 }
@@ -338,7 +337,8 @@ a {
 
 /* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
 
-.main-nav-bot li:first-child:hover .categories-list {
+.main-nav-bot li:first-child:hover .categories-list,
+.main-nav-bot li:first-child a:focus + .categories-list {
   display: flex;
 }
 
@@ -909,7 +909,6 @@ a {
 
 .footer-logo {
   width: 163px;
-  height: 35px;
 }
 
 .footer-logo svg{
@@ -926,6 +925,7 @@ a {
 
 .footer-user-block {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -1019,6 +1019,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 
   width: 428px;
   margin: 0;
