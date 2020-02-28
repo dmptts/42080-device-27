@@ -346,6 +346,8 @@ a {
 .main-nav-bot li:first-child:hover .categories-list,
 .main-nav-bot li:first-child a:focus + .categories-list {
   display: flex;
+
+  z-index: 1;
 }
 
 .categories-list {
@@ -397,10 +399,6 @@ a {
 /* ======= Промо-слайдер ======= */
 
 .promo-slider {
-  /* Временные стили */
-  box-sizing: border-box;
-  border: 2px solid black;
-
   /* Для отрисовки поверх шапки. Без position: relative шапка закрыват смещенную область */
   position: relative;
 
@@ -410,22 +408,59 @@ a {
 }
 
 .promo-slide {
+  position: relative;
+
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  min-height: 486px;
+  min-height: 499px;
 }
 
-/* .promo-img {
-  width: 384px;
-} */
+.promo-slide::before {
+  position: absolute;
+  top: -11px;
+  right: 47px;
+
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1.79px;
+}
+
+.promo-slide-1::before {
+  content: "01";
+}
+
+.promo-slide-2::before {
+  content: "02";
+}
+
+.promo-slide-3::before {
+  content: "03";
+}
 
 .promo-column-wraper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
-  width: 480px;
-  margin-right: 80px;
+  width: 500px;
+  margin-right: 60px;
+}
+
+.promo-column-wraper::before {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: 0;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
 }
 
 .promo-img {
@@ -433,23 +468,30 @@ a {
 }
 
 .promo-slide-1 .promo-img {
-  margin-right: 124px;
+  margin-top: 2px;
+  margin-right: 126px;
 }
 
 .promo-slide-2 .promo-img {
-  margin-right: 140px;
+  margin-top: 14px;
+  margin-right: 139px;
+}
+
+.promo-slide-3 .promo-img {
+  margin-top: 68px;
+  margin-right: 43px;
 }
 
 .promo-title {
   margin: 0;
-  margin-top: 80px;
+  margin-top: 82px;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 800;
   color: #000000;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
 }
 
 .promo-text {
@@ -467,6 +509,10 @@ a {
   margin-top: 49px;
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.promo-slide-3 .promo-characteristics {
+  width: 300px;
 }
 
 .promo-characteristics-row-1 {
@@ -497,9 +543,50 @@ a {
   width: 140px;
 }
 
-.promo-characteristics td:last-child {
+.promo-characteristics td:nth-child(3) {
   width: 160px;
 }
+
+.promo-slider-controls {
+  position: absolute;
+  bottom: 157px;
+  right: 83px;
+
+  line-height: 12px;
+}
+
+.promo-slider-control {
+  position: relative;
+
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 17px;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo-slider-control:last-child {
+  margin-right: 0;
+}
+
+.promo-slider-control-active::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 2px;
+
+  border: 1px solid #000000;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
 /* ======= Основное содержимое главной страницы ======= */
 
 .main-page .main-content {

@@ -63,11 +63,11 @@
     <main class="main-content">
       <h1 class="page-title">Device</h1>
       <section class="promo-slider">
-        <div class="promo-slide promo-slide-1 visually-hidden">
+        <div class="promo-slide promo-slide-1">
           <img class="promo-img" src="img/slider-item-img-1.png" alt="Изображение продвигаемого монопода" width="384" height="486">
           <div class="promo-column-wraper">
             <h2 class="promo-title">Делай селфи,<br> как Бен Стиллер!</h2>
-            <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="promo-text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="btn promo-btn">Подробнее</a>
             <table class="promo-characteristics">
               <tr class="promo-characteristics-row promo-characteristics-row-1">
@@ -87,7 +87,7 @@
           <img class="promo-img" src="img/slider-item-img-2.png" alt="Изображение продвигаемого фитнес-браслета" width="345" height="485">
           <div class="promo-column-wraper">
             <h2 class="promo-title">Худеем <br>правильно!</h2>
-            <p class="promo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <p class="promo-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
             <a href="#" class="btn promo-btn">Подробнее</a>
             <table class="promo-characteristics">
               <tr class="promo-characteristics-row promo-characteristics-row-1">
@@ -99,18 +99,29 @@
             </table>
           </div>
         </div>
-        <!-- <div class="promo-slide promo-slide-3 visually-hidden">
+        <div class="promo-slide promo-slide-3">
           <img class="promo-img" src="img/slider-item-img-3.png" alt="Изображение продвигаемого дрона" width="526" height="334">
-          <h2 class="promo-title">Порхает как бабочка, жалит как пчела!</h2>
-          <p class="promo-text">Этот обычный, на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a href="#" class="btn promo-btn">Подробнее</a>
-          <dl class="promo-characteristics">
-            <td>Дальность полета</td>
-            <dd>800 м</dd>
-            <td>Радиус поражения</td>
-            <dd>50 м</dd>
-          </dl>
-        </div> -->
+          <div class="promo-column-wraper">
+            <h2 class="promo-title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="promo-text">Этот обычный, на первый взгляд квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+            <a href="#" class="btn promo-btn">Подробнее</a>
+            <table class="promo-characteristics">
+              <tr class="promo-characteristics-row promo-characteristics-row-1">
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr class="promo-characteristics-row promo-characteristics-row-2">
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="promo-slider-controls">
+          <span class="promo-slider-control" onclick="currentSlide(1)"></span>
+          <span class="promo-slider-control" onclick="currentSlide(2)"></span>
+          <span class="promo-slider-control" onclick="currentSlide(3)"></span>
+        </div>
       </section>
       <!--Здесь будут слайдеры, списки категорий и брендов-->
       <div class="index-sections-wraper">
@@ -226,5 +237,6 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
