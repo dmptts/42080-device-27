@@ -343,14 +343,14 @@ a {
 
 /* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
 
-.main-nav-bot li:first-child:hover .categories-list,
-.main-nav-bot li:first-child a:focus + .categories-list {
+.main-nav-bot li:first-child:hover .main-nav-categories-list,
+.main-nav-bot li:first-child a:focus + .main-nav-categories-list {
   display: flex;
 
   z-index: 1;
 }
 
-.categories-list {
+.main-nav-categories-list {
   position: absolute;
   top: 100%;
   left: -60px;
@@ -367,26 +367,26 @@ a {
   background-color: #f7e296;
 }
 
-.categories-list ul {
+.main-nav-categories-list ul {
   padding: 0;
 }
 
-.categories-list li:first-child {
+.main-nav-categories-list li:first-child {
   width: 200px;
 }
 
-.categories-list li:nth-child(2),
-.categories-list li:nth-child(3) {
+.main-nav-categories-list li:nth-child(2),
+.main-nav-categories-list li:nth-child(3) {
   width: 160px;
 }
 
-.categories-list li:first-child,
-.categories-list li:nth-child(2),
-.categories-list li:nth-child(3) {
+.main-nav-categories-list li:first-child,
+.main-nav-categories-list li:nth-child(2),
+.main-nav-categories-list li:nth-child(3) {
   margin-right: 40px;
 }
 
-.categories-list a {
+.main-nav-categories-list a {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 36px;
@@ -405,6 +405,7 @@ a {
   width: 1160px;
   margin: auto;
   margin-top: -116px;
+  margin-bottom: 96px;
 }
 
 .promo-slide {
@@ -585,6 +586,141 @@ a {
   border-radius: 50%;
 
   transform: translate(-50%, -50%);
+}
+
+/* ======= Блок категорий ======= */
+
+.categories {
+  width: 1160px;
+  margin: auto;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.categories-item {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.categories-item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.categories-item-title {
+  position: relative;
+
+  width: 160px;
+  margin: 0;
+  padding-top: 193px;
+
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.categories-item-title::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.categories-item-title::after {
+  position: absolute;
+  content: "";
+
+  background-repeat: no-repeat;
+}
+
+.categories-item-title-vr::after {
+  top: 52px;
+  left: 31px;
+
+  width: 97px;
+  height: 55px;
+
+  background-image: url("../img/icon-categories-vr.svg");
+}
+
+.categories-item-title-monopods::after {
+  top: 41px;
+  left: 38px;
+
+  width: 86px;
+  height: 117px;
+
+  background-image: url("../img/icon-categories-monopods.svg");
+}
+
+.categories-item-title-action-cams::after {
+  top: 38px;
+  left: 49px;
+
+  width: 71px;
+  height: 87px;
+
+  background-image: url("../img/icon-categories-action-cams.svg");
+}
+
+.categories-item-title-fitness-bracelets::after {
+  top: 50px;
+  left: 28px;
+
+  width: 107px;
+  height: 65px;
+
+  background-image: url("../img/icon-categories-fitness-braceletes.svg");
+}
+
+.categories-item-title-smart-watches::after {
+  top: 32px;
+  left: 55px;
+
+  width: 56px;
+  height: 98px;
+
+  background-image: url("../img/icon-categories-smart-watches.svg");
+}
+
+.categories-item-title-drones::after {
+  top: 49px;
+  left: 13px;
+
+  width: 132px;
+  height: 69px;
+
+  background-image: url("../img/icon-categories-drones.svg");
+}
+
+.categories-item-link:hover .categories-item-title::before {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.categories-item-link:active .categories-item-title::before {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.categories-item-link:active .categories-item-title::after {
+  opacity: 0.3;
+}
+
+.categories-item-link:active .categories-item-title {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* ======= Основное содержимое главной страницы ======= */
