@@ -820,7 +820,7 @@ a {
 }
 
 .services-item-credit::before {
-  top: -12;
+  top: -12px;
   right: 55px;
 
   width: 171px;
@@ -1390,7 +1390,7 @@ a {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-mid-container {
