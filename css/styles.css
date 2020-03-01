@@ -844,7 +844,51 @@ a {
   margin: 0;
 }
 
-/* ======= Основное содержимое главной страницы ======= */
+/* ======= Логотипы брендов ======= */
+
+.brands {
+  width: 1160px;
+  margin: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
+
+  background-color: #ffffff;
+}
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  line-height: 0;
+
+  list-style: none;
+}
+
+.brands-item {
+  width: 260px;
+  margin-right: 40px;
+}
+
+.brands-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.brands-img {
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+  -webkit-filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.brands-img:hover,
+.brands-img:active {
+  filter: none;
+  opacity: 1;
+}
+
+/* ======= О компании и контакты ======= */
 
 .main-page .main-content {
   padding-bottom: 82px;
