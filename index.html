@@ -118,9 +118,9 @@
           </div>
         </div>
         <div class="promo-slider-controls">
-          <span class="promo-slider-control" onclick="currentSlide(1)"></span>
-          <span class="promo-slider-control" onclick="currentSlide(2)"></span>
-          <span class="promo-slider-control" onclick="currentSlide(3)"></span>
+          <span class="promo-slider-control" onclick="currentSlide(1, promoSlide)"></span>
+          <span class="promo-slider-control" onclick="currentSlide(2, promoSlide)"></span>
+          <span class="promo-slider-control" onclick="currentSlide(3, promoSlide)"></span>
         </div>
       </section>
       <section class="categories">
@@ -157,6 +157,30 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section class="services">
+        <div class="services-wraper">
+          <h2 class="visually-hidden">Наши сервисы</h2>
+          <div class="services-controls visually-hidden">
+            <button class="btn services-control" type="button" onclick="currentSlide(1, servicesItem)">Доставка</button>
+            <button class="btn services-control" type="button" onclick="currentSlide(2, servicesItem)">Гарантия</button>
+            <button class="btn services-control" type="button" onclick="currentSlide(3, servicesItem)">Кредит</button>
+          </div>
+          <ul class="services-list">
+            <li class="services-item services-item-delievery">
+              <h3 class="services-item-title">Доставка</h3>
+              <p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services-item services-item-warranty">
+              <h3 class="services-item-title">Гарантия</h3>
+              <p class="services-item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-item services-item-credit">
+              <h3 class="services-item-title">Кредит</h3>
+              <p class="services-item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Здесь будут слайдеры, списки категорий и брендов-->
       <div class="index-sections-wraper">

@@ -573,7 +573,7 @@ a {
   margin-right: 0;
 }
 
-.promo-slider-control-active::before {
+.promo-slider-control.active::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -593,6 +593,7 @@ a {
 .categories {
   width: 1160px;
   margin: auto;
+  margin-bottom: 41px;
 }
 
 .categories-list {
@@ -721,6 +722,126 @@ a {
 
 .categories-item-link:active .categories-item-title {
   color: rgba(0, 0, 0, 0.3);
+}
+
+/* ======= Предоставляемые сервисы ======= */
+
+.services {
+  min-height: 388px;
+  background: linear-gradient(to bottom, #ffffff, #ffffff 26%, #e5e5e5 26%, #e5e5e5 100%);
+}
+
+.services-wraper {
+  display: flex;
+
+  width: 1160px;
+  margin: auto;
+}
+
+.services-controls {
+  width: 277px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  border-right: 7px solid #000000;
+}
+
+.services-control {
+  width: 160px;
+  margin-bottom: 24px;
+
+  transition-property: width, padding-right;
+  transition-duration: 0,1s;
+  transition-timing-function: linear;
+}
+
+.services-control:last-child {
+  margin-bottom: 0;
+}
+
+.services-control.active {
+  width: 277px;
+  padding-right: 117px;
+  color: #f7e184;
+
+  transition-property: width, padding-right;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+.services-control.active::before,
+.services-control.active:hover::before,
+.services-control.active:active::before {
+  height: 40px;
+  background-color: #000000;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 73px;
+
+  list-style: none;
+}
+
+.services-item {
+  position: relative;
+
+  width: 460px;
+  padding-left: 116px;
+  padding-right: 300px;
+}
+
+.services-item::before {
+  position: absolute;
+  content: "";
+
+  background-repeat: no-repeat;
+}
+
+.services-item-delievery::before {
+  top: 12px;
+  right: 66px;
+
+  width: 136px;
+  height: 164px;
+
+  background-image: url("../img/icon-delivery.svg");
+}
+
+.services-item-warranty::before {
+  top: -12px;
+  right: 46px;
+
+  width: 171px;
+  height: 194px;
+
+  background-image: url("../img/icon-warranty.svg");
+}
+
+.services-item-credit::before {
+  top: -12;
+  right: 55px;
+
+  width: 171px;
+  height: 194px;
+
+  background-image: url("../img/icon-credit.svg");
+}
+
+.services-item-title {
+  margin: 0;
+  margin-bottom: 31px;
+
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.services-item-text {
+  margin: 0;
 }
 
 /* ======= Основное содержимое главной страницы ======= */
