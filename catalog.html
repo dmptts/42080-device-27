@@ -76,6 +76,20 @@
           </div>
           <div class="filter-form-wraper">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-range">
+                <legend>Стоимость</legend>
+                <div class="filter-range-scale-ctrl">
+                  <div class="filter-range-scale">
+                    <div class="filter-range-bar"></div>
+                  </div>
+                  <div class="filter-range-toggle filter-range-toggle-min"></div>
+                  <div class="filter-range-toggle filter-range-toggle-max"></div>
+                </div>
+                <div class="filter-range-num-ctrl">
+                  <label>От <input type="number" name="min-price" value="0"></label>
+                  <label>До <input type="number" name="max-price" value="5000"></label>
+                </div>
+              </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
                 <input id="filter-color-black" class="filter-form-checkbox visually-hidden" type="checkbox" name="black-color" checked>
