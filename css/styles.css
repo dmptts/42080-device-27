@@ -1313,17 +1313,129 @@ a {
   flex-grow: 1;
 
   width: 830px;
-  padding-bottom: 90px;
+  padding-bottom: 77px;
 }
 
-.catalog ul {
+.sorting {
+  min-height: 70px;
+
+  background-color: #ebebeb;
+}
+
+.sorting-wraper {
+  display: flex;
+  align-items: baseline;
+
+  width: 760px;
+  padding-left: 71px;
+}
+
+.sorting h2{
+  margin: 0;
+  margin-right: 51px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.sorting ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+.sorting li {
+  display: inline-block;
+}
+
+.sorting-criteria {
+  margin: 0;
+}
+
+.sorting-criteria li {
+  margin-right: 26px;
+}
+
+.sorting-criteria li:last-child {
+  margin-right: 0;
+}
+
+.sorting-criteria a {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-criteria a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-criteria a:active {
+  color: #000000;
+}
+
+.sorting-criteria .active,
+.sorting-criteria .active:hover,
+.sorting-criteria .active:active {
+  color: #000000;
+  cursor: default;
+}
+
+.sorting-direction {
+  margin: 0;
+  margin-left: auto;
+}
+
+.sorting-direction li:last-child {
+  margin-left: 15px;
+}
+
+.sorting-direction a {
+  display: block;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-sorting.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.sorting-direction a:hover {
+  opacity: 0.6;
+}
+
+.sorting-direction a:active {
+  opacity: 1;
+}
+
+.sorting-direction .active,
+.sorting-direction .active:hover,
+.sorting-direction .active:active {
+  opacity: 1;
+  cursor: default;
+}
+
+.sorting-deriction-dec {
+  transform: rotate(180deg);
+}
+
+.catalog-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
   width: 760px;
   margin: 0;
-  padding-top: 140px;
+  margin-bottom: 37px;
+  padding-top: 70px;
   padding-left: 71px;
 
   list-style: none;
@@ -1440,6 +1552,91 @@ a {
 .catalog-item .compare-btn:active {
   color: rgba(0, 0, 0, 0.2);
 }
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  width: 760px;
+  margin-left: 71px;
+
+  background-color: #ebebeb;
+}
+
+.paginator a {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.paginator-prev,
+.paginator-next {
+  display: block;
+  width: 136px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 3.2px;
+}
+
+.paginator-prev {
+  margin-right: auto;
+}
+
+.paginator-next {
+  margin-left: auto;
+}
+
+.paginator-prev:hover,
+.paginator-next:hover {
+  background-color: #d9d9d9;
+}
+
+.paginator-prev:active,
+.paginator-next:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
+.paginator-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.paginator-list li {
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.paginator-list li:last-child {
+  margin-right: 0;
+}
+
+.catalog-page-num {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-page-num:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-page-num:active {
+  color: #000000;
+}
+
+.paginator-list .active,
+.paginator-list .active:hover,
+.paginator-list .active:active {
+  color: #000000;
+  cursor: default;
+}
+
 
 /* ======= Футер страницы ======= */
 

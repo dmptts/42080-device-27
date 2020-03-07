@@ -115,7 +115,22 @@
           </div>
         </section>
         <section class="catalog">
-          <ul>
+          <div class="sorting">
+            <div class="sorting-wraper">
+              <h2>Сортировка:</h2>
+              <ul class="sorting-criteria">
+                <li><a class="active" href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+              </ul>
+              <ul class="sorting-direction">
+                <li><a class="sorting-deriction-asc" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li><a class="sorting-deriction-dec active" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <h2 class="visually-hidden">Товары:</h2>
+          <ul class="catalog-list">
 
             <li class="catalog-item">
               <div class="item-img-container">
@@ -176,6 +191,15 @@
             </li>
 
           </ul>
+          <div class="paginator">
+            <a class="paginator-prev" href="#">Назад</a>
+            <ul class="paginator-list">
+              <li><a class="catalog-page-num active" href="#">1</a></li>
+              <li><a class="catalog-page-num" href="#">2</a></li>
+              <li><a class="catalog-page-num" href="#">3</a></li>
+            </ul>
+            <a class="paginator-next" href="#">Вперед</a>
+          </div>
         </section>
       </div>
     </main>
