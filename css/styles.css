@@ -271,7 +271,23 @@ a {
   padding-left: 26px;
 }
 
-.header-user-block .login-btn::before {
+.header-user-block .logout-btn {
+  margin-left: 20px;
+  padding: 0;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-user-block .logout-btn:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-user-block .logout-btn:active {
+  color: #000000;
+}
+
+.header-user-block .login-btn::before,
+.header-user-block .account-link::before {
   position: absolute;
   content: "";
   top: 5px;
@@ -1749,13 +1765,34 @@ a {
 .footer-user-block a {
   position: relative;
 
-  display: block;
-  height: 21px;
-  margin-top: 3px;
+  display: inline-block;
+  /* height: 21px; */
+  /* margin-top: 3px; */
   padding-left: 25px;
 
   color: rgba(255, 255, 255, 0.7);
   line-height: 21px;
+}
+
+.footer-user-block .account-link,
+.footer-user-block .logout-btn {
+  display: inline-block;
+  /* margin-top: 0; */
+}
+
+.footer-user-block .logout-btn {
+  margin-left: 20px;
+  padding: 0;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-block .logout-btn:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-user-block .logout-btn:active {
+  color: #ffffff;
 }
 
 .footer-user-block a:hover {
@@ -1779,7 +1816,8 @@ a {
   opacity: 0.3;
 }
 
-.footer-user-block .login-btn::before {
+.footer-user-block .login-btn::before,
+.footer-user-block .account-link::before {
   top: 4px;
   left: 0px;
 
