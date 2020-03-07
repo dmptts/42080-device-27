@@ -1766,8 +1766,6 @@ a {
   position: relative;
 
   display: inline-block;
-  /* height: 21px; */
-  /* margin-top: 3px; */
   padding-left: 25px;
 
   color: rgba(255, 255, 255, 0.7);
@@ -1777,7 +1775,6 @@ a {
 .footer-user-block .account-link,
 .footer-user-block .logout-btn {
   display: inline-block;
-  /* margin-top: 0; */
 }
 
 .footer-user-block .logout-btn {
