@@ -117,7 +117,8 @@ a {
 }
 
 .main-page .page-header {
-  min-height: 250px;
+  min-height: 140px;
+  padding-bottom: 160px;
 }
 
 .catalog-page .page-header {
@@ -346,15 +347,35 @@ a {
 }
 
 .main-nav-bot li:first-child {
+  flex-shrink: 0;
   margin-right: auto;
 }
 
-.main-nav-bot li:nth-child(2) {
-  margin-right: 34px;
+.main-nav-bot-services {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 500px;
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav-bot li:nth-child(3) {
-  margin-right: 105px;
+.main-nav-bot-services li {
+  margin-right: 20px;
+}
+
+.main-nav-bot-services li:nth-child(3n+1) {
+  flex-basis: 138px;
+  margin-right: 20px;
+}
+
+.main-nav-bot-services li:nth-child(3n+2) {
+  flex-basis: 199px;
+  margin-right: 20px;
+}
+
+.main-nav-bot-services li:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 /* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
