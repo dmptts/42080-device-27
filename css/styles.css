@@ -613,6 +613,8 @@ a {
   height: 10px;
   margin-right: 17px;
 
+  vertical-align: baseline;
+
   border: 1px solid #000000;
   border-radius: 50%;
   cursor: pointer;
@@ -1265,6 +1267,7 @@ a {
   margin-right: -4px;
   padding: 0;
 
+  vertical-align: baseline;
   text-transform: lowercase;
 }
 
@@ -1399,6 +1402,8 @@ a {
 
 .sorting li {
   display: inline-block;
+
+  vertical-align: baseline;
 }
 
 .sorting-criteria {
@@ -1685,6 +1690,8 @@ a {
 .paginator-list li {
   display: inline-block;
   margin-right: 27px;
+
+  vertical-align: baseline;
 }
 
 .paginator-list li:last-child {
@@ -1798,6 +1805,8 @@ a {
   display: inline-block;
   padding-left: 25px;
 
+  vertical-align: baseline;
+
   color: rgba(255, 255, 255, 0.7);
   line-height: 21px;
 }
@@ -1805,6 +1814,8 @@ a {
 .footer-user-block .account-link,
 .footer-user-block .logout-btn {
   display: inline-block;
+
+  vertical-align: baseline;
 }
 
 .footer-user-block .logout-btn {
