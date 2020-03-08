@@ -1912,13 +1912,17 @@ a {
   background-repeat: no-repeat;
 }
 
-.footer-mid-container p {
+.footer-mid-container p,
+.footer-mid-container a {
   width: 250px;
   margin: 0;
 }
 
-.footer-mid-container p:last-child {
+.footer-mid-container a {
   text-align: end;
+
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-nav {
