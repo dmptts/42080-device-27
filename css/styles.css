@@ -2036,6 +2036,8 @@ a {
 }
 
 .modal-feedback {
+  display: none;
+
   width: 760px;
   min-height: 353px;
   padding-top: 79px;
@@ -2167,6 +2169,8 @@ a {
 }
 
 .modal-map {
+  display: none;
+
   width: 960px;
   height: 560px;
 }
