@@ -778,7 +778,8 @@ a {
 /* ======= Предоставляемые сервисы ======= */
 
 .services {
-  min-height: 388px;
+  min-height: 318px;
+  padding-bottom: 70px;
   background: linear-gradient(to bottom, #ffffff, #ffffff 26%, #e5e5e5 26%, #e5e5e5 100%);
 }
 
@@ -787,6 +788,7 @@ a {
 
   width: 1160px;
   margin: auto;
+  padding-bottom: ;
 }
 
 .services-controls {
@@ -831,6 +833,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 73px;
+  padding-bottom: 70px;
 
   list-style: none;
 }
