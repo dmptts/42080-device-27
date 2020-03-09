@@ -1058,8 +1058,29 @@ a {
   margin-bottom: 39px;
 }
 
-.contacts .map {
+.map-wraper {
+  position: relative;
+
+  height: 222px;
   margin-bottom: 60px;
+}
+
+/* .contacts .map {
+  position: relative;
+
+  margin-bottom: 60px;
+} */
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  cursor: pointer;
 }
 
 /* ======= Основное содержимое страницы каталога ======= */
@@ -2029,6 +2050,8 @@ a {
   left: 50%;
   z-index: 10;
 
+  display: none;
+
   transform: translate(-50%, -50%);
   box-shadow: 0px 10px 21px 0px rgba(4, 6, 6, 0.2);
   -webkit-box-shadow: 0px 10px 21px 0px rgba(4, 6, 6, 0.2);
@@ -2036,8 +2059,6 @@ a {
 }
 
 .modal-feedback {
-  display: none;
-
   width: 760px;
   min-height: 353px;
   padding-top: 79px;
@@ -2169,8 +2190,6 @@ a {
 }
 
 .modal-map {
-  display: none;
-
   width: 960px;
   height: 560px;
 }
@@ -2178,4 +2197,21 @@ a {
 .map,
 .modal-map iframe {
   border: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-show {
+  display: block;
 }
