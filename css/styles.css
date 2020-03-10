@@ -1076,10 +1076,6 @@ a {
   padding-bottom: 82px;
 }
 
-.main-page .page-title {
-  display: none; /* to-do: удалить после замены на visually-hidden */
-}
-
 .index-sections-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
