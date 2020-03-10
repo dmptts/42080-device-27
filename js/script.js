@@ -60,8 +60,21 @@ var modalOverlay = document.querySelector(".modal-overlay");
 // localStorage
 
 var isStorageSupport = true;
-var nameStorage = localStorage.getItem("name");
-var emailStorage = localStorage.getItem("email");
+var nameStorage;
+var emailStorage;
+
+// Проверка доступности localStorage
+
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+};
+
+if (isStorageSupport) {
+  nameStorage = localStorage.getItem("name");
+  emailStorage = localStorage.getItem("email");
+};
 
 // Поиск
 
@@ -137,13 +150,7 @@ nameInput.removeAttribute("required");
 emailInput.removeAttribute("required");
 textInput.removeAttribute("required");
 
-// Проверка доступности localStorage
 
-try {
-  storage = localStorage.getItem("login");
-} catch (err) {
-  isStorageSupport = false;
-};
 
 // Проверка значений формы
 
