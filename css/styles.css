@@ -798,6 +798,11 @@ a {
   color: #000000;
 }
 
+.categories-item-title-monopods {
+  width: 150px;
+  padding-right: 10px;
+}
+
 .categories-item-title::before {
   position: absolute;
   content: "";
