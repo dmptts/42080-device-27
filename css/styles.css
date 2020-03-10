@@ -225,10 +225,6 @@ a {
   height: 50px;
 }
 
-.search-form label {
-  display: none; /* to-do: удалить после замены на visually-hidden */
-}
-
 .search-form input {
   width: 310px;
   height: 50px;
@@ -251,22 +247,10 @@ a {
   border-bottom: 2px solid transparent;
 }
 
-.search-form input::-webkit-input-placeholder {
-  color: inherit;
-}
-
-.search-form input::-moz-placeholder {
-  color: inherit;
-}
-
-.search-form input:-ms-input-placeholder {
-  color: inherit;
-}
-
-.search-form input::-ms-input-placeholder {
-  color: inherit;
-}
-
+.search-form input::-webkit-input-placeholder,
+.search-form input::-moz-placeholder,
+.search-form input:-ms-input-placeholder,
+.search-form input::-ms-input-placeholder,
 .search-form input::placeholder {
   color: inherit;
 }
@@ -281,7 +265,7 @@ a {
 }
 
 .search-form button {
-  display: none;
+  /* display: none; */
   width: 86px;
   padding: 0;
 
@@ -606,9 +590,7 @@ a {
   position: relative;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

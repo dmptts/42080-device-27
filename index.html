@@ -22,8 +22,8 @@
       <nav class="main-nav">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск:</label>
-          <input type="search" id="search" placeholder="Поиск по сайту">
-          <button class="submit-btn" type="submit">Найти</button>
+          <input type="search" id="search" placeholder="Поиск по сайту" required>
+          <button class="submit-btn visually-hidden" type="submit">Найти</button>
         </form>
         <ul class="header-user-block">
           <li class="account-block"><a class="login-btn" href="#">Войти</a></li>
@@ -123,9 +123,9 @@
           </div>
         </div>
         <div class="promo-slider-controls">
-          <span class="promo-slider-control" onclick="currentSlide(1, promoSlide)"></span>
-          <span class="promo-slider-control" onclick="currentSlide(2, promoSlide)"></span>
-          <span class="promo-slider-control" onclick="currentSlide(3, promoSlide)"></span>
+          <span class="promo-slider-control" onclick="currentSlide(1, promoSlide)" tabindex="0"></span>
+          <span class="promo-slider-control" onclick="currentSlide(2, promoSlide)" tabindex="0"></span>
+          <span class="promo-slider-control" onclick="currentSlide(3, promoSlide)" tabindex="0"></span>
         </div>
       </section>
       <section class="categories">

@@ -63,6 +63,24 @@ var isStorageSupport = true;
 var nameStorage = localStorage.getItem("name");
 var emailStorage = localStorage.getItem("email");
 
+// Поиск
+
+var searchForm = document.querySelector(".search-form");
+var searchInput = document.querySelector(".search-form input");
+var searchSubmit = document.querySelector(".search-form button");
+
+searchInput.addEventListener("focus", function (evt) {
+  searchSubmit.classList.remove("visually-hidden");
+});
+
+searchInput.addEventListener("blur", function (evt) {
+  searchSubmit.classList.add("visually-hidden");
+});
+
+searchSubmit.addEventListener("focus", function (evt) {
+  searchSubmit.classList.remove("visually-hidden");
+});
+
 // Открытие модального окна фидбека
 
 feedbackBtn.addEventListener("click", function (evt) {
