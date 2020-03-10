@@ -123,7 +123,8 @@ a {
           transition-timing-function: linear;
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn:focus::before {
   height: 40px;
   -webkit-transition-property: height;
   -o-transition-property: height;
@@ -265,7 +266,7 @@ a {
 }
 
 .search-form button {
-  /* display: none; */
+  display: inline;
   width: 86px;
   padding: 0;
 
@@ -276,12 +277,6 @@ a {
   border: 2px solid #000000;
 
   cursor: pointer;
-}
-
-/* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
-
-.search-form input:focus + button {
-  display: inline;
 }
 
 .search-form button:hover {
@@ -442,14 +437,14 @@ a {
 
 /* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
 
-.main-nav-bot li:first-child:hover .main-nav-categories-list,
+/* .main-nav-bot li:first-child:hover .main-nav-categories-list,
 .main-nav-bot li:first-child a:focus + .main-nav-categories-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 
   z-index: 1;
-}
+} */
 
 .main-nav-catalog-link {
   position: relative;
@@ -494,8 +489,9 @@ a {
   position: absolute;
   top: 100%;
   left: -60px;
+  z-index: 1;
 
-  display: none;
+  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -866,12 +862,13 @@ a {
   background-image: url("../img/icon-categories-drones.svg");
 }
 
-.categories-item-link:hover .categories-item-title::before {
+.categories-item-link:hover .categories-item-title::before,
+.categories-item-link:focus .categories-item-title::before {
   background-color: rgba(240, 197, 46, 1);
 }
 
 .categories-item-link:active .categories-item-title::before {
-  background-color: rgba(240, 197, 46, 1);
+  backg round-color: rgba(240, 197, 46, 1);
 }
 
 .categories-item-link:active .categories-item-title::after {
@@ -1065,6 +1062,7 @@ a {
 }
 
 .brands-img:hover,
+.brands-link:focus .brands-img,
 .brands-img:active {
   -webkit-filter: none;
           filter: none;

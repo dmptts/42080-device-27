@@ -35,7 +35,7 @@ function showSlides(n, x) {
   controls[slideIndex - 1].classList.add("active");
 };
 
-// "Кнопки" открытия бодальных окон
+// "Кнопки" открытия модальных окон
 
 var feedbackBtn = document.querySelector(".feedback-btn");
 var mapOverlay = document.querySelector(".map-overlay");
@@ -76,7 +76,7 @@ if (isStorageSupport) {
   emailStorage = localStorage.getItem("email");
 };
 
-// Поиск
+// Форма поиска
 
 var searchForm = document.querySelector(".search-form");
 var searchInput = document.querySelector(".search-form input");
@@ -92,6 +92,28 @@ searchInput.addEventListener("blur", function (evt) {
 
 searchSubmit.addEventListener("focus", function (evt) {
   searchSubmit.classList.remove("visually-hidden");
+});
+
+searchSubmit.addEventListener("blur", function (evt) {
+  searchSubmit.classList.add("visually-hidden");
+});
+
+// Выпадающее меню
+
+var catalogLink = document.querySelector(".main-nav-catalog-link");
+var dropdown = document.querySelector(".main-nav-categories-list");
+var test = document.querySelector(".list-item-catalog");
+
+catalogLink.addEventListener("mouseenter", function (evt) {
+  dropdown.classList.remove("visually-hidden");
+});
+
+catalogLink.addEventListener("focus", function (evt) {
+  dropdown.classList.remove("visually-hidden");
+});
+
+test.addEventListener("mouseleave", function (evt) {
+  dropdown.classList.add("visually-hidden");
 });
 
 // Открытие модального окна фидбека
