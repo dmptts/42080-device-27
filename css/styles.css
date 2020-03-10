@@ -1758,7 +1758,7 @@ a {
   margin-top: 0;
 }
 
-.item-img-container {
+.item-img-wraper {
   position: relative;
 
   line-height: 0;
@@ -1766,12 +1766,12 @@ a {
 
 /* To-do: в последствие заменить механизм скрытия кнопок товара на JS */
 
-.item-img-container:hover .btn,
-.item-img-container:hover .compare-btn {
+.item-img-wraper:hover .btn,
+.item-img-wraper:hover .compare-btn {
   display: block;
 }
 
-.item-img-container::before {
+.item-img-wraper::before {
   position: absolute;
   content: "";
   top: 0;
@@ -1785,11 +1785,11 @@ a {
   opacity: 0.7;
 }
 
-.item-img-container:hover::before {
+.item-img-wraper:hover::before {
   display: block;
 }
 
-.item-info-container {
+.item-info-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1991,7 +1991,7 @@ a {
   background-color: #ffc600;
 }
 
-.footer-top-container {
+.footer-top-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2002,7 +2002,7 @@ a {
   margin-bottom: 20px;
 }
 
-.footer-mid-container {
+.footer-mid-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2010,7 +2010,7 @@ a {
   margin-bottom: 64px;
 }
 
-.footer-bot-container {
+.footer-bot-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2144,13 +2144,13 @@ a {
   background-repeat: no-repeat;
 }
 
-.footer-mid-container p,
-.footer-mid-container a {
+.footer-mid-wraper p,
+.footer-mid-wraper a {
   width: 250px;
   margin: 0;
 }
 
-.footer-mid-container a {
+.footer-mid-wraper a {
   text-align: right;
 
   color: #ffffff;
