@@ -1613,7 +1613,10 @@ a {
 }
 
 .sorting {
+  box-sizing: border-box;
   min-height: 70px;
+  padding-top: 22px;
+  padding-bottom: 23px;
 
   background-color: #ebebeb;
 }
@@ -1625,7 +1628,6 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-
   width: 760px;
   padding-left: 71px;
 }
@@ -1633,8 +1635,6 @@ a {
 .sorting h2{
   margin: 0;
   margin-right: 51px;
-  padding-top: 23px;
-  padding-bottom: 23px;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -1651,18 +1651,18 @@ a {
   list-style: none;
 }
 
-.sorting li {
-  display: inline-block;
-
-  vertical-align: baseline;
-}
-
 .sorting-criteria {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 460px;
   margin: 0;
 }
 
 .sorting-criteria li {
-  margin-right: 26px;
+  margin-right: 31px;
+
+  line-height: 24px;
 }
 
 .sorting-criteria li:last-child {
@@ -1692,12 +1692,15 @@ a {
 }
 
 .sorting-direction {
+  display: flex;
+
+  width: 41px;
   margin: 0;
   margin-left: auto;
 }
 
 .sorting-direction li:last-child {
-  margin-left: 15px;
+  margin-left: 19px;
 }
 
 .sorting-direction a {
@@ -2203,9 +2206,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
