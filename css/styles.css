@@ -219,8 +219,22 @@ a {
 }
 
 .search-form {
+  position: relative;
   width: 440px;
   height: 50px;
+}
+
+.search-form::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
 }
 
 .search-form input {
@@ -232,35 +246,28 @@ a {
   padding-left: 40px;
   padding-right: 0;
 
-
-  color: rgba(0, 0, 0, 0.3);
-
   background-color: transparent;
-  background-image: url("../img/icon-search.svg");
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: 4px 16px;
   border: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+  opacity: 0.3;
 }
 
-.search-form input::-webkit-input-placeholder,
-.search-form input::-moz-placeholder,
-.search-form input:-ms-input-placeholder,
-.search-form input::-ms-input-placeholder,
-.search-form input::placeholder {
-  color: inherit;
+.search-form input::-webkit-input-placeholder,:hover
+.search-form input::-moz-placeholder:hover,
+.search-form input:-ms-input-placeholder:hover,
+.search-form input::-ms-input-placeholder:hover,
+.search-form input::placeholder:hover {
+  color: #000000;
 }
 
 .search-form input:hover {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .search-form input:focus {
-  color: rgba(0, 0, 0, 1);
   border-bottom: 2px solid #000000;
-  background-position: 5px 16px;
+  opacity: 1;
 }
 
 .search-form button {
@@ -270,6 +277,7 @@ a {
 
   font-weight: 300;
   line-height: 46px;
+  vertical-align: baseline;
 
   background-color: transparent;
   border: 2px solid #000000;
@@ -1009,6 +1017,8 @@ a {
   background-repeat: no-repeat;
 }
 
+
+
 .services-item-delievery::before {
   top: 12px;
   right: 66px;
@@ -1052,10 +1062,21 @@ a {
   line-height: 48px;
   font-weight: 800;
   color: #000000;
+  letter-spacing: 1.1px;
 }
 
 .services-item-text {
   margin: 0;
+
+  letter-spacing: 0.27px;
+}
+
+.services-item-delievery .services-item-text {
+  width: 455px;
+}
+
+.services-item-credit .services-item-text {
+  width: 440px;
 }
 
 /* ======= Логотипы брендов ======= */
@@ -1110,7 +1131,7 @@ a {
 /* ======= О компании и контакты ======= */
 
 .main-page .main-content {
-  padding-bottom: 82px;
+  padding-bottom: 81px;
 }
 
 .index-sections-wraper {
@@ -1211,14 +1232,8 @@ a {
   position: relative;
 
   height: 222px;
-  margin-bottom: 60px;
+  margin-bottom: 68px;
 }
-
-/* .contacts .map {
-  position: relative;
-
-  margin-bottom: 60px;
-} */
 
 .map-overlay {
   position: absolute;
@@ -1728,7 +1743,7 @@ a {
 
   width: 760px;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   padding-top: 70px;
   padding-left: 71px;
 
@@ -1737,7 +1752,7 @@ a {
 
 .catalog-item {
   width: 360px;
-  margin-top: 50px;
+  margin-top: 47px;
 }
 
 .catalog-item-new {
@@ -1747,18 +1762,19 @@ a {
 .catalog-item-new::before {
   position: absolute;
   content: "New";
-  top: 26px;
+  top: 27px;
   right: 26px;
   z-index: 1;
 
   width: 57px;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-bottom: 17px;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 800;
+  letter-spacing: 0.7px;
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
@@ -1821,9 +1837,9 @@ a {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.33;
+  line-height: 24px;
   color: #000000;
-  letter-spacing: normal;
+  letter-spacing: 0.3px;
 }
 
 .catalog-item h3:hover {
@@ -1834,11 +1850,20 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.catalog-item-2 h3 {
+  width: 230px;
+}
+
+.catalog-item-3 h3 {
+  letter-spacing: 0.1px;
+}
+
 .catalog-item p {
   margin: 0;
 
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.2px;
 }
 
 .catalog-item .btn {
@@ -2300,8 +2325,8 @@ a {
 
 .modal-feedback {
   width: 760px;
-  min-height: 353px;
-  padding-top: 79px;
+  min-height: 381px;
+  padding-top: 93px;
   padding-bottom: 79px;
   padding-left: 100px;
   padding-right: 100px;
@@ -2326,7 +2351,7 @@ a {
 
 .modal-feedback label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -2372,13 +2397,13 @@ a {
 .modal-feedback input{
   width: 360px;
   height: 50px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .modal-feedback textarea {
   width: 760px;
   height: 156px;
-  margin-bottom: 41px;
+  margin-bottom: 33px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -2423,7 +2448,7 @@ a {
   top: 50%;
   left: 50%;
 
-  width: 23px;
+  width: 29px;
   height: 2px;
 
   background-color: #ffffff;
