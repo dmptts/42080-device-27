@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="main-page">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -68,7 +68,7 @@
       <h1 class="page-title visually-hidden">Device</h1>
       <section class="promo-slider">
         <h2 class="promo-slider-title visually-hidden">Популярные товары</h2>
-        <div class="promo-slide promo-slide-1">
+        <div class="promo-slide promo-slide-1 active no-js">
           <img class="promo-img" src="img/slider-item-img-1.png" alt="Изображение продвигаемого монопода" width="384" height="486">
           <div class="promo-column-wraper">
             <h3 class="promo-title">Делай селфи,<br> как Бен Стиллер!</h3>
@@ -88,7 +88,7 @@
             </table>
           </div>
         </div>
-        <div class="promo-slide promo-slide-2">
+        <div class="promo-slide promo-slide-2 active no-js">
           <img class="promo-img" src="img/slider-item-img-2.png" alt="Изображение продвигаемого фитнес-браслета" width="345" height="485">
           <div class="promo-column-wraper">
             <h3 class="promo-title">Худеем <br>правильно!</h3>
@@ -104,7 +104,7 @@
             </table>
           </div>
         </div>
-        <div class="promo-slide promo-slide-3">
+        <div class="promo-slide promo-slide-3 active no-js">
           <img class="promo-img" src="img/slider-item-img-3.png" alt="Изображение продвигаемого дрона" width="526" height="334">
           <div class="promo-column-wraper">
             <h3 class="promo-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -122,7 +122,7 @@
             </table>
           </div>
         </div>
-        <div class="promo-slider-controls">
+        <div class="slider-controls promo-controls-wraper no-js">
           <span class="promo-slider-control" onclick="currentSlide(1, promoSlide)" tabindex="0"></span>
           <span class="promo-slider-control" onclick="currentSlide(2, promoSlide)" tabindex="0"></span>
           <span class="promo-slider-control" onclick="currentSlide(3, promoSlide)" tabindex="0"></span>
@@ -166,21 +166,21 @@
       <section class="services">
         <div class="services-wraper">
           <h2 class="visually-hidden">Наши сервисы</h2>
-          <div class="services-controls visually-hidden">
+          <div class="slider-controls services-controls-wraper no-js">
             <button class="btn services-control" type="button" onclick="currentSlide(1, servicesItem)">Доставка</button>
             <button class="btn services-control" type="button" onclick="currentSlide(2, servicesItem)">Гарантия</button>
             <button class="btn services-control" type="button" onclick="currentSlide(3, servicesItem)">Кредит</button>
           </div>
           <ul class="services-list">
-            <li class="services-item services-item-delievery">
+            <li class="services-item services-item-delievery active no-js">
               <h3 class="services-item-title">Доставка</h3>
               <p class="services-item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="services-item services-item-warranty">
+            <li class="services-item services-item-warranty active no-js">
               <h3 class="services-item-title">Гарантия</h3>
               <p class="services-item-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
-            <li class="services-item services-item-credit">
+            <li class="services-item services-item-credit active no-js">
               <h3 class="services-item-title">Кредит</h3>
               <p class="services-item-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
@@ -327,6 +327,6 @@
       </button>
     </section>
     <div class="modal-overlay"></div>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

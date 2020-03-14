@@ -5,24 +5,27 @@ var servicesSlider = document.querySelector(".services");
 
 if (promoSlider !== null || servicesSlider !== null) {
 
-  var servicesControls = document.querySelector(".services-controls");
-  servicesControls.classList.remove("visually-hidden");
-  
+  var sliderControls = document.getElementsByClassName("slider-controls");
+  for (var i = 0; i < sliderControls.length; i++) {
+    sliderControls[i].classList.remove("no-js");
+  }
+
+
   var slideIndex = 1;
   var promoSlide = "promoSlide";
   var servicesItem = "servicesItem";
-  
+
   showSlides(slideIndex, promoSlide);
   showSlides(slideIndex, servicesItem);
-  
+
   function currentSlide(n, x) {
     showSlides(slideIndex = n, x);
   };
-  
+
   function showSlides(n, x) {
     var slides;
     var controls;
-  
+
     if (x == "promoSlide") {
       slides = document.getElementsByClassName("promo-slide");
       controls = document.getElementsByClassName("promo-slider-control");
@@ -30,13 +33,14 @@ if (promoSlider !== null || servicesSlider !== null) {
       slides = document.getElementsByClassName("services-item");
       controls = document.getElementsByClassName("services-control");
     };
-  
+
     for (var i = 0; i < slides.length; i++) {
-      slides[i].classList.add("visually-hidden");
+      slides[i].classList.remove("active");
+      slides[i].classList.remove("no-js");
       controls[i].classList.remove("active")
     };
-  
-    slides[slideIndex - 1].classList.remove("visually-hidden");
+
+    slides[slideIndex - 1].classList.add("active");
     controls[slideIndex - 1].classList.add("active");
   };
 

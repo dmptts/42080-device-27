@@ -64,14 +64,11 @@ a {
 }
 
 .visually-hidden {
-  position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .btn {
@@ -538,7 +535,7 @@ a {
 /* ======= Промо-слайдер ======= */
 
 .promo-slider {
-  /* Для отрисовки поверх шапки. Без position: relative шапка закрыват смещенную область */
+  /* Для отрисовки поверх шапки. Без position: relative шапка закрывает смещенную область */
   position: relative;
 
   width: 1160px;
@@ -550,12 +547,16 @@ a {
 .promo-slide {
   position: relative;
 
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 
   width: 100%;
   min-height: 499px;
+}
+
+.promo-slide.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .promo-slide::before {
@@ -708,12 +709,16 @@ a {
   width: 160px;
 }
 
-.promo-slider-controls {
+.promo-controls-wraper {
   position: absolute;
   bottom: 157px;
   right: 83px;
 
   line-height: 12px;
+}
+
+.slider-controls.no-js {
+  display: none;
 }
 
 .promo-slider-control {
@@ -799,8 +804,8 @@ a {
 }
 
 .categories-item-title-monopods {
-  width: 150px;
-  padding-right: 10px;
+  width: 125px;
+  padding-right: 35px;
 }
 
 .categories-item-title::before {
@@ -917,12 +922,16 @@ a {
   margin: auto;
 }
 
-.services-controls {
+.services-controls-wraper {
   width: 277px;
   padding-top: 80px;
   padding-bottom: 70px;
 
   border-right: 7px solid #000000;
+}
+
+.services-controls-wraper.no-js {
+  display: none;
 }
 
 .services-control {
@@ -983,9 +992,14 @@ a {
 .services-item {
   position: relative;
 
+  display: none;
   width: 460px;
   padding-left: 116px;
   padding-right: 300px;
+}
+
+.services-item.active {
+  display: block;
 }
 
 .services-item::before {
@@ -1023,6 +1037,10 @@ a {
   height: 194px;
 
   background-image: url("../img/icon-credit.svg");
+}
+
+.services-item.no-js:not(:first-child) {
+  margin-top: 60px;
 }
 
 .services-item-title {
