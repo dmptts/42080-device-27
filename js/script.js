@@ -8,8 +8,7 @@ if (promoSlider !== null || servicesSlider !== null) {
   var sliderControls = document.getElementsByClassName("slider-controls");
   for (var i = 0; i < sliderControls.length; i++) {
     sliderControls[i].classList.remove("no-js");
-  }
-
+  };
 
   var slideIndex = 1;
   var promoSlide = "promoSlide";
