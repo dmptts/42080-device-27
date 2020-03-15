@@ -271,7 +271,7 @@ a {
 }
 
 .search-form .submit-btn {
-  display: inline-block;
+  display: none;
   width: 86px;
   padding: 0;
 
@@ -281,15 +281,15 @@ a {
 
   background-color: transparent;
   border: 2px solid #000000;
-  opacity: 0;
 
   cursor: pointer;
 }
 
 .search-form-input:focus + .submit-btn,
+.search-form:focus-within .submit-btn,
 .search-form .submit-btn:focus,
 .search-form .submit-btn:hover {
-  opacity: 1;
+  display: inline-block;
 }
 
 .search-form .submit-btn:hover {
@@ -448,17 +448,6 @@ a {
   margin-right: 0;
 }
 
-/* Тройной селктор временный - до подключения JS. To-do: заменить на снятие/назначение .visually-hidden */
-
-/* .main-nav-bot li:first-child:hover .main-nav-categories-list,
-.main-nav-bot li:first-child a:focus + .main-nav-categories-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  z-index: 1;
-} */
-
 .main-nav-catalog-link {
   position: relative;
 
@@ -516,6 +505,16 @@ a {
   padding-right: 60px;
 
   background-color: #f7e296;
+}
+
+.main-nav-categories-list.hidden {
+  display: none;
+}
+
+.main-nav-catalog-link:hover + .main-nav-categories-list,
+.main-nav-categories-list:hover,
+.list-item-catalog:focus-within .main-nav-categories-list {
+  display: flex;
 }
 
 .main-nav-categories-list ul {

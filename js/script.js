@@ -214,6 +214,9 @@ var catalogLink = document.querySelector(".main-nav-catalog-link");
 var dropdown = document.querySelector(".main-nav-categories-list");
 var test = document.querySelector(".list-item-catalog");
 
+dropdown.classList.remove("hidden");
+dropdown.classList.add("visually-hidden");
+
 catalogLink.addEventListener("mouseenter", function (evt) {
   dropdown.classList.remove("visually-hidden");
 });
