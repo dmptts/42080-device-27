@@ -237,7 +237,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.search-form input {
+.search-form-input {
   width: 310px;
   height: 50px;
   margin-right: -4px;
@@ -253,24 +253,24 @@ a {
   opacity: 0.3;
 }
 
-.search-form input::-webkit-input-placeholder,:hover
-.search-form input::-moz-placeholder:hover,
-.search-form input:-ms-input-placeholder:hover,
-.search-form input::-ms-input-placeholder:hover,
-.search-form input::placeholder:hover {
+.search-form-input::-webkit-input-placeholder,:hover
+.search-form-input::-moz-placeholder:hover,
+.search-form-input:-ms-input-placeholder:hover,
+.search-form-input::-ms-input-placeholder:hover,
+.search-form-input::placeholder:hover {
   color: #000000;
 }
 
-.search-form input:hover {
+.search-form-input:hover {
   opacity: 0.6;
 }
 
-.search-form input:focus {
+.search-form-input:focus {
   border-bottom: 2px solid #000000;
   opacity: 1;
 }
 
-.search-form button {
+.search-form .submit-btn {
   display: inline-block;
   width: 86px;
   padding: 0;
@@ -281,17 +281,24 @@ a {
 
   background-color: transparent;
   border: 2px solid #000000;
+  opacity: 0;
 
   cursor: pointer;
 }
 
-.search-form button:hover {
+.search-form-input:focus + .submit-btn,
+.search-form .submit-btn:focus,
+.search-form .submit-btn:hover {
+  opacity: 1;
+}
+
+.search-form .submit-btn:hover {
   color: #ffffff;
 
   background-color: #000000;
 }
 
-.search-form button:active {
+.search-form .submit-btn:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1583,14 +1590,24 @@ a {
 }
 
 .filter-form label:hover::before,
-.filter-form label:hover::after {
+.filter-form label:hover::after,
+.filter-form-checkbox:focus + label::before,
+.filter-form-radio:focus + label::before,
+.filter-form-radio:focus + label::after {
   opacity: 0.6;
+}
+
+.filter-form-checkbox:active + label:before,
+.filter-form-radio:active + label:before,
+.filter-form-radio:active + label:after {
+  opacity: 1;
 }
 
 .filter-form-checkbox:disabled + label,
 .filter-form-checkbox:disabled + label::before,
 .filter-form-radio:disabled + label,
-.filter-form-radio:disabled + label::before {
+.filter-form-radio:disabled + label::before,
+.filter-form-radio:disabled + label::after {
   opacity: 0.3;
   cursor: default;
 }
@@ -1728,7 +1745,7 @@ a {
   cursor: default;
 }
 
-.sorting-deriction-dec {
+.sorting-deriction-descending {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1797,13 +1814,6 @@ a {
   line-height: 0;
 }
 
-/* To-do: в последствие заменить механизм скрытия кнопок товара на JS */
-
-.item-img-wraper:hover .btn,
-.item-img-wraper:hover .compare-btn {
-  display: block;
-}
-
 .item-img-wraper::before {
   position: absolute;
   content: "";
@@ -1818,7 +1828,10 @@ a {
   opacity: 0.7;
 }
 
-.item-img-wraper:hover::before {
+.item-img-wraper:hover button,
+.item-img-wraper:hover::before,
+.item-img-wraper:focus-within button,
+.item-img-wraper:focus-within::before {
   display: block;
 }
 
@@ -2024,7 +2037,7 @@ a {
 .page-footer-wraper::before {
   position: absolute;
   content: "";
-  bottom: 17px;
+  bottom: 14px;
   left: 0;
 
   width: 80px;
@@ -2048,6 +2061,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 
   margin-bottom: 64px;
 }
@@ -2084,6 +2101,7 @@ a {
       flex-wrap: wrap;
 
   margin: 0;
+  margin-top: -2px;
   padding: 0;
 
   list-style: none;
@@ -2232,6 +2250,10 @@ a {
 }
 
 .footer-nav a {
+  display: block;
+  width: auto;
+  margin-top: 7px;
+
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 800;

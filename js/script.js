@@ -208,28 +208,6 @@ if (feedbackBtn !== null || mapOverlay !== null) {
 
 };
 
-// Форма поиска
-
-var searchForm = document.querySelector(".search-form");
-var searchInput = document.querySelector(".search-form input");
-var searchSubmit = document.querySelector(".search-form button");
-
-searchInput.addEventListener("focus", function (evt) {
-  searchSubmit.classList.remove("visually-hidden");
-});
-
-searchInput.addEventListener("blur", function (evt) {
-  searchSubmit.classList.add("visually-hidden");
-});
-
-searchSubmit.addEventListener("focus", function (evt) {
-  searchSubmit.classList.remove("visually-hidden");
-});
-
-searchSubmit.addEventListener("blur", function (evt) {
-  searchSubmit.classList.add("visually-hidden");
-});
-
 // Выпадающее меню
 
 var catalogLink = document.querySelector(".main-nav-catalog-link");

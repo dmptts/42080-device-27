@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс | Моноподы для селфи</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="catalog-page">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -22,8 +22,8 @@
       <nav class="main-nav">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск:</label>
-          <input type="search" id="search" placeholder="Поиск по сайту" required>
-          <button class="submit-btn visually-hidden" type="submit">Найти</button>
+          <input class="search-form-input" type="search" id="search" placeholder="Поиск по сайту" required>
+          <button class="submit-btn" type="submit">Найти</button>
         </form>
         <ul class="header-user-block">
           <li class="account-block">
@@ -131,8 +131,8 @@
                 <li><a href="#">По популярности</a></li>
               </ul>
               <ul class="sorting-direction">
-                <li><a class="sorting-deriction-asc" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
-                <li><a class="sorting-deriction-dec active" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+                <li><a class="sorting-deriction-ascending" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li><a class="sorting-deriction-descending active" href="#"><span class="visually-hidden">По убыванию</span></a></li>
               </ul>
             </div>
           </div>
@@ -140,9 +140,9 @@
           <ul class="catalog-list">
 
             <li class="catalog-item catalog-item-1">
-              <div class="item-img-wraper">
+              <div class="item-img-wraper" tabindex="0">
                 <img class="catalog-item-img" src="img/catalog-item-1.jpg" alt="Изображение любительской селфи-палки" width="360" height="380">
-                <button class="btn" type="button">В корзину</button>
+                <button class="btn cart-btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
               <div class="item-info-wraper">
@@ -154,9 +154,9 @@
             </li>
 
             <li class="catalog-item catalog-item-2">
-              <div class="item-img-wraper">
+              <div class="item-img-wraper" tabindex="0">
                 <img class="catalog-item-img" src="img/catalog-item-2.jpg" alt="Изображение профессиональной селфи-палки" width="360" height="380">
-                <button class="btn" type="button">В корзину</button>
+                <button class="btn cart-btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
               <div class="item-info-wraper">
@@ -168,9 +168,9 @@
             </li>
 
             <li class="catalog-item catalog-item-3">
-              <div class="item-img-wraper">
+              <div class="item-img-wraper" tabindex="0">
                 <img class="catalog-item-img" src="img/catalog-item-3.jpg" alt="Изображение непотопляемой селфи-палки" width="360" height="380">
-                <button class="btn" type="button">В корзину</button>
+                <button class="btn cart-btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
               <div class="item-info-wraper">
@@ -183,9 +183,9 @@
             </li>
 
             <li class="catalog-item catalog-item-4 catalog-item-new">
-              <div class="item-img-wraper">
+              <div class="item-img-wraper" tabindex="0">
                 <img class="catalog-item-img" src="img/catalog-item-4.jpg" alt="Изображение селфи-палки «Следуй за мной»" width="360" height="380">
-                <button class="btn" type="button">В корзину</button>
+                <button class="btn cart-btn" type="button">В корзину</button>
                 <button class="compare-btn" type="button">Добавить к сравнению</button>
               </div>
               <div class="item-info-wraper">
@@ -276,6 +276,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
