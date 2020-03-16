@@ -2217,9 +2217,18 @@ a {
 }
 
 .footer-mid-wraper p,
-.footer-mid-wraper a {
+.footer-mid-wraper span {
   width: 250px;
   margin: 0;
+}
+
+.footer-mid-wraper span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer-mid-wraper a {
