@@ -1979,20 +1979,25 @@ a {
 .paginator-prev,
 .paginator-next {
   display: block;
+  box-sizing: border-box;
   width: 136px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-left: 30px;
+
+  text-align: left;
   color: #000000;
   letter-spacing: 3.2px;
 }
 
 .paginator-prev {
   margin-right: auto;
+  padding-left: 30px;
 }
 
 .paginator-next {
   margin-left: auto;
+  padding-left: 32px;
 }
 
 .paginator-prev:hover,
