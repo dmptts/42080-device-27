@@ -1423,6 +1423,18 @@ a {
   border: none;
 }
 
+.filter-form .filter-range {
+  padding-bottom: 34px;
+}
+
+.filter-form .filter-color {
+  padding-bottom: 37px;
+}
+
+.filter-form .filter-bluetooth {
+  padding-bottom: 37px;
+}
+
 .filter-form legend {
   width: 100%;
   margin: 0;
