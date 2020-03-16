@@ -440,12 +440,12 @@ a {
 
 .main-nav-bot-services li:nth-child(3n+2) {
   -ms-flex-preferred-size: 197px;
-      flex-basis: 197px;
+      flex-basis: 203px;
   margin-right: 20px;
 }
 
 .main-nav-bot-services li:nth-child(3n+3) {
-  margin-right: 0;
+  margin-right: -3.6px;
 }
 
 .main-nav-catalog-link {
