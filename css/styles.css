@@ -432,10 +432,6 @@ a {
   padding: 0;
 }
 
-.main-nav-bot-services li {
-  margin-right: 20px;
-}
-
 .main-nav-bot-services li:nth-child(3n+1) {
   -ms-flex-preferred-size: 138px;
       flex-basis: 138px;
@@ -449,7 +445,7 @@ a {
 }
 
 .main-nav-bot-services li:nth-child(3n+3) {
-  margin-right: -3.6px;
+  margin-right: -5.6px;
 }
 
 .main-nav-catalog-link {
